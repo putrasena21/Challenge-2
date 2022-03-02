@@ -1,17 +1,21 @@
-var readline = require("readline")
-var log = console.log
+function sortScoreAsc(){
+    let score = [100,25,26,27,28]
+    score.sort(function(a,b){return a-b})
+    return score
+}
 
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-let i = 1
-rl.question(`Masukkan Jumlah Murid : `, (students)=>{
-    log(`Jumlah Murid = ${students}`)
-    while (i <= students){
-        rl.question(`Masukkan Nilai Murid ${i} : `, (score)=>{
-            log(score)
-        })
-        i++
-    }
-})
+function sortScoreDesc(){
+    let score = [100,25,26,27,28]
+    score.sort(function(a,b){return b-a})
+    return score
+}
+
+function minScore(){
+    let min = Math.min(...sortScoreAsc())
+    return min
+}
+
+function maxScore(){
+    let max = Math.max(...sortScoreAsc())
+    return max
+}
