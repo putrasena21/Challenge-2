@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/putrasena21/Challenge-2/issues"
   },
-  "homepage": "https://github.com/putrasena21/Challenge-2#readme"
+  "homepage": "https://github.com/putrasena21/Challenge-2#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
