@@ -1,0 +1,22 @@
+{
+  "name": "challenge-2",
+  "version": "1.0.0",
+  "description": "this is for challenge",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/putrasena21/Challenge-2.git"
+  },
+  "author": "putasena21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/putrasena21/Challenge-2/issues"
+  },
+  "homepage": "https://github.com/putrasena21/Challenge-2#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
