@@ -22,12 +22,18 @@ class Students {
   }
 
   scoreChecker() {
-    let scores = this.avgScore();
-    if (scores >= 75) {
-      return `Anda Lulus`;
-    } else {
-      return `Anda Tidak Lulus`;
+    let scores = this.scores;
+    let pass = 0;
+    let notPass = 0;
+
+    for (let i = 0; i < scores.length; i++) {
+      if (scores[i] >= 75) {
+        pass += 1;
+      } else {
+        notPass += 1;
+      }
     }
+    return { pass, notPass };
   }
 }
 
