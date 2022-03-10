@@ -20,3 +20,5 @@ console.log(`Nilai rata - rata : ${student.avgScore()}`);
 console.log(
   `Urutan nilai dari terendah ke tertinggi : \n${student.scores.join("\n")}`
 );
+console.log(`Total siswa lolos : ${student.scoreChecker().pass}`);
+console.log(`Total siswa tidak lolos : ${student.scoreChecker().notPass}`);

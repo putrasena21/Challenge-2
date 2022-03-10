@@ -20,6 +20,21 @@ class Students {
     const avg = sum / this.scores.length;
     return avg;
   }
+  
+  scoreChecker() {
+    let scores = this.scores;
+    let pass = 0;
+    let notPass = 0;
+
+    for (let i = 0; i < scores.length; i++) {
+      if (scores[i] >= 75) {
+        pass += 1;
+      } else {
+        notPass += 1;
+      }
+    }
+    return { pass, notPass };
+  }
 }
 
 module.exports = Students;
