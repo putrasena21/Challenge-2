@@ -20,3 +20,4 @@ console.log(`Nilai rata - rata : ${student.avgScore()}`);
 console.log(
   `Urutan nilai dari terendah ke tertinggi : \n${student.scores.join("\n")}`
 );
+console.log(student.scoreChecker());

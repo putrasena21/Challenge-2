@@ -20,6 +20,15 @@ class Students {
     const avg = sum / this.scores.length;
     return avg;
   }
+
+  scoreChecker() {
+    let scores = this.avgScore();
+    if (scores >= 75) {
+      return `Anda Lulus`;
+    } else {
+      return `Anda Tidak Lulus`;
+    }
+  }
 }
 
 module.exports = Students;
