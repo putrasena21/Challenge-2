@@ -20,7 +20,7 @@ class Students {
     const avg = sum / this.scores.length;
     return avg;
   }
-
+  
   scoreChecker() {
     let scores = this.scores;
     let pass = 0;
